@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+	<title> UCS538-A5 </title>
+	<h2> Select files to process </h2>
+	<p>
+		{% with messages = get_flashed_messages() %}
+		  {% if messages %}
+			<ul class=flashes>
+			{% for message in messages %}
+			  <li>{{ message }}</li>
+			{% endfor %}
+			</ul>
+		  {% endif %}
+		{% endwith %}
+	</p>
+	<form method="post" action="/ucs538-assignment5" enctype="multipart/form-data">
+	    <dl>
+			<p>
+				<input type="file" name="file" autocomplete="off" multiple>
+			</p>
+	    </dl>
+	    <p>
+			<input type="submit" value="Submit">
+			</p>
+			<p>
+				Please wait after clicking submit, zip file with results will begin downloading automatically after processing
+			</p>
+	</form>
+	<p>
+</html>
