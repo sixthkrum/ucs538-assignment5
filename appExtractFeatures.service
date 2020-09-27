@@ -7,7 +7,7 @@ User=user
 Group=www-data
 WorkingDirectory=/home/user/apps/ucs538-assignment5
 Environment="PATH=/home/user/apps/ucs538-assignment5/assvenv/bin"
-ExecStart=/home/user/apps/ucs538-assignment5/assvenv/bin/uwsgi --ini converter.ini
+ExecStart=/home/user/apps/ucs538-assignment5/assvenv/bin/uwsgi --ini extractFeatures.ini
 
 [Install]
 WantedBy=multi-user.target
